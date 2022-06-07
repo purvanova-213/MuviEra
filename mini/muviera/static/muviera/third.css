@@ -1,0 +1,236 @@
+body {
+  height: 93vh;
+  position: relative;
+  background: url('third.jpeg') no-repeat center center/cover;
+}
+
+.nav-item {
+  padding: 0 5px;
+}
+
+.nav-link {
+  font-family: 'Ubuntu', sans-serif;
+  color: #D8B6A4;
+  font-weight: bold;
+}
+
+.user {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container-fluid {
+  padding: 1% 2%;
+}
+
+.text-center {
+  margin-top: 200px;
+}
+
+.GFG1,
+.GFG2 {
+  font-size: 24px;
+  padding: 20px;
+  width: 500px;
+}
+
+.GFG1 {
+  width: 500px;
+  height: 64px;
+  padding: 20px 40px;
+  margin-left: 560px;
+  margin-right: 270px;
+  margin-top: 55px;
+}
+
+.GFG1:hover {
+  width: 600px;
+  height: 64px;
+  padding: 20px 64px;
+}
+
+.GFG2 {
+  width: 500px;
+  height: 64px;
+  padding: 20px 48px;
+  margin-top: 150px;
+  margin-left: 300px;
+}
+
+.GFG2:hover {
+  width: 600px;
+  height: 64px;
+  padding: 20px 64px;
+}
+
+.rm {
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+
+/* Sidenav */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background-color: #f3f5f9;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  width: 300px;
+  height: 100%;
+  background: #524A4E;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2 {
+  color: #FDEFF4;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #FFF5FD;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #FFF5FD;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #F76E11;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+
+.wrapper .sidebar .social_media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a {
+  display: block;
+  width: 40px;
+  background: #F76E11;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #FFF5FD;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@media (max-height: 500px) {
+  .social_media {
+    display: none !important;
+  }
+}
+
+/* button */
+.GFG1, .GFG2 {
+  width: 500px;
+  height: 60px;
+  border: none;
+  border-color: #111;
+  outline: none;
+  color: #111;
+  background: #FFF5FD;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.GFG1:before,
+.GFG2:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.GFG1:active,
+.GFG2:active {
+  color: #000
+}
+
+.GFG1:active:after,
+.GFG2:active:after {
+  background: transparent;
+}
+
+.GFG1:hover:before,
+.GFG2:hover:before {
+  opacity: 1;
+}
+
+.GFG1:after .GFG2:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

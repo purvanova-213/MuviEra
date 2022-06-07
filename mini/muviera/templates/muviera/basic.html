@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{% static 'muviera/landing.css' %}">
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="{% static 'muviera/logo.jpeg' %}" alt="" />
+            <a href="login/" class="btn btn-rounded">Log In</a>
+        </div>
+
+        <div class="showcase-content">
+            <h1>Type your favorite Movies and Musics</h1>
+            <p>Get top recommendations</p>
+            <a href="#" class="btn btn-xl"
+                >Continue as Guest<i class="fas fa-chevron-right btn-icon"></i
+            ></a>
+        </div>
+    </header>
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">About Us</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <i class="fas fa-tablet-alt fa-3x"></i>
+                <p class="hide-sm">Contact Us</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                </div>
+            </div>
+
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                </div>
+            </div>
+
+
+
+    </footer>
+    <script  src="{% static 'muviera/landing.js' %}"></script>
+</body>
+</html>
